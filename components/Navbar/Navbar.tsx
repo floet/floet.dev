@@ -24,7 +24,7 @@ const Navbar = () => {
         <LinkScroll to="clientes" spy={true} smooth={true} duration={500} className="cursor-pointer hover:text-green-500 transition-all">Clientes</LinkScroll>
       </div>
 
-      <div className="hidden md:block"></div> {/* apenas para separar o flex, layouts acima de 768px */}
+      <div className="hidden w-16 md:block"></div> {/* apenas para separar o flex, layouts acima de 768px */}
 
       <MenuIcon onClick={() => setShowMenu("in")}/>
       <NavbarMenu show={showMenu} setShow={setShowMenu}/>
