@@ -1,12 +1,10 @@
 const Footer = () => {
   return (
-    <footer className='py-8 flex items-center justify-center mt-16'>
-      <ul className='flex items-center space-x-6 text-sm text-gray-400 font-light'>
-        <li><a href="#" className="hover:text-green-500 transition-all">Contact</a></li>
-        <li><a href="https://linkedin.com" target="_blank" rel="noopener" className="hover:text-green-500 transition-all">Linkedin</a></li>
-        <li><a href="#" className="hover:text-green-500 transition-all">Terms</a></li>
-        <li><a href="#" className="hover:text-green-500 transition-all">Privacy</a></li>
-      </ul>
+    <footer className='bg-footer py-8 mt-16'>
+      <div className='max-w-7xl mx-auto flex flex-col text-sm text-gray-400 px-8 2xl:px-0'>
+        <div className="text-white text-xl font-semibold">Floet</div>
+        <span className="mt-2 md:mt-1">Copyright &copy; 2018 Floet. Todos os direitos reservados.</span>
+      </div>
     </footer>
   )
 }

@@ -8,14 +8,14 @@ const Navbar = () => {
   const [ showMenu, setShowMenu ] = useState("none");
 
   return (
-    <div className='py-8 xl:py-10 flex items-center justify-between px-4 2xl:px-0'>
+    <div className='max-w-7xl mx-auto py-8 xl:py-10 flex items-center justify-between px-8 2xl:px-0'>
       <Link href="/">
-        <div className="text-2xl md:text-lg font-semibold hover:text-green-500 transition-all cursor-pointer">
+        <div className="text-2xl font-semibold hover:text-green-500 transition-all cursor-pointer">
           Floet
         </div>
       </Link>
-      <MenuIcon onClick={() => setShowMenu("in")}/>
-      <NavbarMenu show={showMenu} setShow={setShowMenu}/>
+      {/* <MenuIcon onClick={() => setShowMenu("in")}/>
+      <NavbarMenu show={showMenu} setShow={setShowMenu}/> */}
     </div>
   )
 }

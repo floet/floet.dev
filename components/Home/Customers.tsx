@@ -7,15 +7,18 @@ const Customers = () => {
       <div className="mt-6 font-light">We help thousands of companies from all over the globe create the best products they can — from enterprise corporations, venture-backed startups, to bootstrapped companies, we love creating products you'll enjoy.</div>
 
       <Grid>
-        <img src="https://apex-software.imgix.net/apex/companies/ibmlogo.png?sat=-100&w=100&dpr=2" alt="Cliente" draggable={false} />
-        <img src="https://apex-software.imgix.net/apex/companies/segment.png?sat=-100&w=100&dpr=2" alt="Cliente" draggable={false} />
-        <img src="https://apex-software.imgix.net/apex/companies/netlify.png?sat=-100&w=100&dpr=2" alt="Cliente" draggable={false} />
-        <img src="https://apex-software.imgix.net/apex/companies/flipkart.png?sat=-100&w=100&dpr=2" alt="Cliente" draggable={false} />
-
-        <img src="https://apex-software.imgix.net/apex/companies/fiftythree.png?sat=-100&w=100&dpr=2" alt="Cliente" draggable={false} />
-        <img src="https://apex-software.imgix.net/apex/companies/github.png?sat=-100&w=100&dpr=2" alt="Cliente" draggable={false} />
-        <img src="https://apex-software.imgix.net/apex/companies/coursera.png?sat=-100&w=100&dpr=2" alt="Cliente" draggable={false} />
-        <img src="https://apex-software.imgix.net/apex/companies/gitbook.png?sat=-100&w=100&dpr=2" alt="Cliente" draggable={false} />
+        <a href="https://promo.shell.com.br/" target="_blank" rel="noopener">
+          <img src="images/logo-promoshell.svg" alt="Shell" draggable={false} />
+        </a>
+        <a href="https://kods.klabin.com.br/?l=PT" target="_blank" rel="noopener">
+          <img src="images/logo-klabin.svg" alt="Klabin" draggable={false} />
+        </a>
+        <a href="https://www.3rpetroleum.com.br/" target="_blank" rel="noopener">
+          <img src="images/logo-3r.svg" alt="3r Petroleum" draggable={false} />
+        </a>
+        <a href="https://novamarca.novonor.com.br/?l=PT" target="_blank" rel="noopener">
+          <img src="images/logo-novonor.png" alt="Novonor" draggable={false} />
+        </a>
       </Grid>
     </Container>
   )
@@ -42,9 +45,10 @@ const Grid = styled.div`
   justify-items: center;
 
   img {
-    max-width: 100px;
+    max-width: 150px;
     cursor: pointer;
     transition: ease-in-out 300ms;
+    /* filter: grayscale(100%); */
 
     @media(min-width: 1280px){
       &:hover{

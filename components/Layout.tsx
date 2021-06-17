@@ -3,9 +3,9 @@ import Footer from "./Footer";
 
 const Layout = ({children}) => {
   return (
-    <div className="max-w-7xl mx-auto font-main">
+    <div className="font-main">
       <Navbar/>
-      <main className="px-8 2xl:px-0">{children}</main>
+      <main className="max-w-7xl mx-auto px-8 2xl:px-0">{children}</main>
       <Footer/>
     </div>
   )
