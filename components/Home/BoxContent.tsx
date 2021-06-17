@@ -3,6 +3,7 @@ import { ArrowRight } from "@styled-icons/bootstrap";
 import Link from "next/link";
 
 interface IBoxContent {
+  compName?:string;
   isFirstBox?: boolean;
   marginTop?: string;
   marginBottom?: string;
@@ -14,6 +15,7 @@ interface IBoxContent {
 }
 
 const BoxContent = ({
+  compName = "",
   isFirstBox,
   marginTop,
   marginBottom,
@@ -24,7 +26,7 @@ const BoxContent = ({
   image
 } : IBoxContent) => {
   return (
-    <Container mt={marginTop} mb={marginBottom}>
+    <Container mt={marginTop} mb={marginBottom} name={compName}>
       <div className="max-w-3xl mx-auto">
         <h2 className={`${isFirstBox ? "text-5xl": "text-4xl"} font-semibold leading-tight`}>{title}</h2>
         <div className="mt-6 font-light">{description}</div>
@@ -39,8 +41,8 @@ const BoxContent = ({
       </div>
       {
         image ? (
-          <div className="flex items-center justify-center md:bg-gray-200 md:py-14 md:px-10 mt-10 md:mt-20">
-            <img src={image} alt="Aqui tem uma imagem" draggable={false} className="md:max-w-xl md:max-h-560px shadow-lg md:shadow-none"/>
+          <div className="flex items-center justify-center md:bg-gray-100 md:py-14 mt-10 md:mt-20">
+            <img src={image} alt="Aqui tem uma imagem" draggable={false} className="max-w-xl w-full lg:max-w-2xl md:max-h-560px rounded-md shadow-lg"/>
           </div>
         ) : null
       }
